@@ -45,7 +45,7 @@ class MutableRecordTest {
     }
 
     @Test
-    @DisplayName("Collections.immutableList")
+    @DisplayName("Collections.unmodifiableList")
     void unmodifiableList() {
         final List<String> reviews = new ArrayList<>();
         reviews.add("First review.");
@@ -105,7 +105,7 @@ class MutableRecordTest {
     }
 
     @Test
-    @DisplayName("Builder with Collections.immutableList")
+    @DisplayName("Builder with Collections.unmodifiableList")
     void builderUnmodifiableList() {
         MutableRecord.MutableRecordBuilder builder = new MutableRecord.MutableRecordBuilder("The case of the forgotten reviews");
         final List<String> reviews = new ArrayList<>();
