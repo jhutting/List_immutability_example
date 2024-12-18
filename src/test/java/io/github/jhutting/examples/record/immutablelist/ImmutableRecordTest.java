@@ -77,6 +77,6 @@ class ImmutableRecordTest {
     void nulledList() {
         ImmutableRecord immutableRecord = new ImmutableRecord("The case of the forgotten reviews", null);
 
-        assertThat(immutableRecord.reviews()).hasSize(0);
+        assertThat(immutableRecord.reviews()).isEmpty();
     }
 }
