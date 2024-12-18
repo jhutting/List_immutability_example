@@ -22,6 +22,7 @@ import java.util.Collections;
 import java.util.List;
 
 public record MutableRecord(String title, List<String> reviews) {
+
     public static final class MutableRecordBuilder {
         private final String title;
 
